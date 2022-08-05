@@ -1,11 +1,19 @@
+#EXCEPTIONS
+# First rule Error: Too many problems. limit 5
+# Second rule Error: Operator must be '+' or '-'.
+# Third rule Error: Numbers must only contain digits.
+# Fourth rule.  Error: Numbers cannot be more than four digits.
+
+
 def arithmetic_arranger(problems, show=False):
     
     #Damos el problema matematico horizontal, esta funcion lo aregla vertical
-    x = 0
+    
     PrimerLinea = ''
     SegundaLinea = ''
     TercerLinea = ''
     LineaResp = ''
+    x = 0
 
     #Leemos la primera regla de no mas de 5 problemas
     if len(problems) > 5:
